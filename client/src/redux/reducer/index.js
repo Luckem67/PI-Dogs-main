@@ -16,7 +16,7 @@ function rootReducer(state = initialState, action) {
       case 'GET_DOG_NAME':
             return {
                 ...state,
-                dogs: action.payload //es el arreglo q estoy renderizando
+                dogs: action.payload 
             }
     case "GET_TEMPERAMENT":
       return {
@@ -28,7 +28,7 @@ function rootReducer(state = initialState, action) {
         ...state,
       };
       case 'FILTER_BY_TEMPERAMENT':
-        const allBreeds = state.dogs //aca tb para el filtro desde todos
+        const allBreeds = state.dogs 
         const temperamentFiltered = action.payload === 'All'? 
         state.allDogs : allBreeds.filter(el => {
            return el.temperament? el.temperament.includes(action.payload) :
@@ -36,11 +36,11 @@ function rootReducer(state = initialState, action) {
                 
         })
             return {
-                ...state, //me traiego todo lo de estado
+                ...state, 
                 dogs: temperamentFiltered
                 
     }
-    case "ORDER_BY_NAME": //'Asc. Desc'
+    case "ORDER_BY_NAME": 
       let sortName =
         action.payload === "Asc"
           ? state.allDogs.sort(function (a, b) {
@@ -50,10 +50,9 @@ function rootReducer(state = initialState, action) {
               if (b.name.toLowerCase() > a.name.toLowerCase()) {
                 return -1;
               }
-              return 0; // si son iguales lo deja como están quiere decir
+              return 0; 
             })
           : state.allDogs.sort(function (a, b) {
-              // si no, ordenalo 'Desc'
               if (a.name.toLowerCase() > b.name.toLowerCase()) {
                 return -1;
               }

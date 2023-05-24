@@ -26,7 +26,6 @@
 	display:table-cell ;
 }
 
-
 .x {
 	align-items: center;
 	color: #ffbb4d;
@@ -53,10 +52,8 @@
 margin-right: 10px;
 cursor: pointer;
 }
+
 h1{
-	
-  
- 
 	font-family: 'Bebas Neue' , sans-serif;
 	color: #ffbb4d;
 	font-size: 4rem;

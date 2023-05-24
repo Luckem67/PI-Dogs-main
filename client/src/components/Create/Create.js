@@ -8,20 +8,16 @@ import './create.css'
 function validate(input){
 
     let errors = {};
-
-    if(!input.name.trim()) { //input es mi estado local
+    if(!input.name.trim()) { 
         errors.name = 'Write a name, please'; 
     }else if(parseInt(input.name)){
         errors.name = 'Name is invalid, please use at least one letter at the beginning'
     }
-
     if(!input.image) {
         errors.image = 'Upload an image, please';  
-
     }
     if(!input.temperament) {
         errors.temperament = 'Select one or more temperaments, please';
-
     }
     if(input.heightMin < 0 || input.heightMin > 100){
         errors.heightMin = 'Require field, please write a valid number between 1 and 100'
@@ -42,7 +38,6 @@ function validate(input){
     if(input.weightMax < input.weightMin){
         errors.weightMin = 'The minimum value cannot be greater than the maximum value'
     }
-
     if(input.lmin < 0 || input.lmin > 19){
         errors.lmin = 'Require field, please write a valid number between 1 and 19'
     }
@@ -59,12 +54,10 @@ function validate(input){
 
 export default function DogCreate(){
     const dispatch = useDispatch()
-    const navigate = useNavigate() //se usa para redirigir a alguna ruta //v de react reemplaza a useHistory
-    const temperament = useSelector((state) => state.temperament) //me traigo el estado de temperament
+    const navigate = useNavigate() 
+    const temperament = useSelector((state) => state.temperament) 
     const [errors, setErrors] = useState({});
-    //para el formulario
     const[input, setInput] = useState({
-
         name: '',
         image: '',
         heightMin: '',
@@ -74,30 +67,25 @@ export default function DogCreate(){
         lmin: '',
         lmax: '',
         temperament: []
-
     });
-
-
 function handleChange(e){
     setInput({
         ...input,
-        [e.target.name] : e.target.value //name seria nombre, imagen, peso, etc; y value el valor de cada uno
+        [e.target.name] : e.target.value
     })
-    setErrors(validate({ //seteo mi estado local errors
+    setErrors(validate({
         ...input,
         [e.target.name]: e.target.value
     }));
     console.log(input)
-
 } 
 function handleSelectTemperament(e){
     setInput({
         ...input,
-        temperament: [...input.temperament, e.target.value], //lo que ya había mas lo nuevo
+        temperament: [...input.temperament, e.target.value], 
     })
 }
-
-function handleSubmit(e){ //FORM
+function handleSubmit(e){ 
     e.preventDefault();
     setErrors(
         validate({
@@ -111,7 +99,7 @@ function handleSubmit(e){ //FORM
     input.weightMax += ' kgs'
     input.life_span = input.lmin + ' - ' + input.lmax + ' years'
     dispatch(postDog(input));
-    alert('Dog created 🐶')
+    alert('Dog created successfully')
     setInput({
         name: '',
         image: '',
@@ -124,24 +112,18 @@ function handleSubmit(e){ //FORM
         temperament: []
     })
 }else {
-    alert('ERROR: Dog not created 😕');
+    alert('Dog not created...');
     return;
 }
-    navigate('/home') //cdo termine de crear el dog, q me redirija al home
+    navigate('/home')
 }
 
 function  handleDelete(el){
     setInput({
-        ...input, //me traigo el anterior para no pisarlo
+        ...input, 
         temperament: input.temperament.filter( temp => temp !==el)
     })
 }
-
-
-
-
-//va cambiando con los inputs ingresados
-//para renderizar los temperamentos
     useEffect(() => {
         dispatch(getTemperament());  
     }, [dispatch]);
@@ -262,7 +244,6 @@ function  handleDelete(el){
                 </select>
                 <div>
                     <button className='create' type='submit'>CREATE</button>
-                  
                 </div>
             </form>
             {input.temperament.map(el => 
@@ -275,6 +256,5 @@ function  handleDelete(el){
                     )}
         </div>
         </div>
-        
     )
 }  

@@ -6,9 +6,9 @@ import './SearchBar.css';
 
 export default function SearchBar(){
     const dispatch = useDispatch()
-    const [name, setName] = useState('') //lo seteo en un string vacío
+    const [name, setName] = useState('')
 
-function handleInputChange(e){ //el value del input va a tomar el value del useState
+function handleInputChange(e){ 
     e.preventDefault()
     setName(e.target.value)
 }
@@ -18,13 +18,10 @@ function handleSubmit(e){
     if(!name.length){
         alert('Please enter a breed');
     } else {
-        dispatch(getDogsName(name));//name es lo q está escribiendo el usuario
-        setName(''); //es para q se borre lo q escriba en la searchbar
-
+        dispatch(getDogsName(name));
+        setName('');
 }
 };   
-
-
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
         <div className='searchBar'>

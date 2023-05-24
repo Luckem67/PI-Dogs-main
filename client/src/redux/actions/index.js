@@ -45,7 +45,6 @@ export function postDog(payload) {
 };
 
 export  function filterDogsByTemperament (payload) {
-  //el payload es el value q me va a llegar
   console.log(payload);
   return {
     type: "FILTER_BY_TEMPERAMENT",
@@ -62,7 +61,7 @@ export  function filterCreated(payload) {
 
 export function orderByName(payload) {
   return {
-    type: "ORDER_BY_NAME", //despacho con ese type
+    type: "ORDER_BY_NAME", 
     payload,
   };
 };

@@ -14,8 +14,6 @@ export default function Card({image, name, temperament, weight, id}) {
                 <br/>  
                 {weight}
             </p>
-           
-            
         </div>
     );
 

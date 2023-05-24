@@ -5,6 +5,7 @@
 	justify-content: center;
 	text-align: center;
 }
+
 .button_container_detail{
 	display: flex;
 	flex-direction: column;
@@ -20,6 +21,7 @@
 	margin: 15px;
 	line-height: 15px;
 }
+
 .button_detail{
 	display: flex;
 	flex-direction: column;
@@ -39,6 +41,7 @@
 	text-align: center;
 	margin-right: 10px;
 }
+
 .image_detail {
 	
 	border-radius: 10px;
@@ -46,6 +49,7 @@
 	width: 540px;
 	height:400px;
 }
+
 p{
 	text-align:justify
 }
