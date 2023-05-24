@@ -1,0 +1,51 @@
+.fondo_3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.button_container_detail{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #82acbc;
+	width: auto;
+	height: auto ;
+	padding: 12px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px #00000040; 
+	opacity: 0.9;
+	text-align: center;
+	margin: 15px;
+	line-height: 15px;
+}
+.button_detail{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 250px;
+	text-shadow: #62492e 1px 1px;
+	box-shadow:#62492e 1px 1px;
+	background-color: transparent;
+	color: #be9155;
+	border-radius: 4px;
+	border: solid 2px ;
+	max-width: 100px;
+	min-width: 75px;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 10px;
+}
+.image_detail {
+	
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px #00000040; 
+	width: 540px;
+	height:400px;
+}
+p{
+	text-align:justify
+}

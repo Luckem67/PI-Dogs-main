@@ -1,0 +1,21 @@
+.loader {
+	background-image: url('../../img/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg');
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+  min-height: 100vh;
+	background-size:140%;
+	background-position:left center;
+	position: relative;
+  overflow: hidden;
+	margin-bottom: -5rem;
+	color:rgb(255, 255, 255);
+	letter-spacing: 0.1cm;
+}
+
+.fondo_1 {
+	background-color: black;
+	height: 100vh;
+	width: 100vw;
+	
+}

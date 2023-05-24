@@ -1,0 +1,22 @@
+.pagination_container{
+display: flex;
+justify-content: center;
+}
+
+.pagination {
+width: 30px;
+background-color: #31271c;  
+border: none;
+padding: 8px 10px;
+border-radius: 5px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+align-items: center;
+display: flex;
+justify-content: center;
+margin: 3px;
+}
+
+.pagination:hover{
+	color: #64859b; 
+}

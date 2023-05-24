@@ -1,0 +1,63 @@
+.fondo_2{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+  min-height: 100vh;
+	background-image: url('../../img/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg');
+	background-size:140%;
+	background-position:left center;
+	position: relative;
+  overflow: hidden;
+}
+
+.container{
+	padding-top: 60px;
+	margin-left: 9rem;
+	font-size: 30px;
+}
+
+.error {
+	color: #ffbb4d;
+	font-size: 18px;
+	
+}
+
+.input_temperament{
+	display:table-cell ;
+}
+
+
+.x {
+	align-items: center;
+	color: #ffbb4d;
+	background-color: transparent;
+	border-radius: 22px;
+	border: #ffbb4d 1px solid;
+	font-weight: bold;
+}
+
+.create, .homeBtn{
+	text-shadow: #62492e 1px 1px;
+	box-shadow:#62492e 1px 1px;
+	padding: 8px;
+	background-color: transparent;
+	color: #be9155;
+	border-radius: 4px;
+	border: solid 2px ;
+	max-width: 100px;
+	min-width: 75px;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+margin-right: 10px;
+cursor: pointer;
+}
+h1{
+	
+  
+ 
+	font-family: 'Bebas Neue' , sans-serif;
+	color: #ffbb4d;
+	font-size: 4rem;
+}

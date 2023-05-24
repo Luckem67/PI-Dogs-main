@@ -1,0 +1,81 @@
+
+.card_grid {
+	display: grid;
+	grid-template-columns: repeat(4, 270px);
+	grid-row-gap: auto;
+	justify-items: center;
+	justify-content:center;
+	padding-bottom: 5px;
+	color: #62492e;
+}
+
+.create_button{
+	text-shadow: #62492e 1px 1px;
+	box-shadow:#62492e 1px 1px;
+	padding: 8px;
+	background-color: transparent;
+	color: #be9155;
+	border-radius: 4px;
+	border: solid 2px ;
+	max-width: 100px;
+	min-width: 75px;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+margin-right: 10px;
+}
+
+.create_button:hover{
+	opacity: 1;
+}
+
+.reload_dogs{
+	font-family:  'Bebas Neue', sans-serif;
+	text-shadow: #62492e 1px 1px;
+	box-shadow:#62492e 1px 1px;
+	padding: 8px;
+	background-color: transparent;
+	color: #be9155;
+	border-radius: 4px;
+	border: solid 2px;
+	width: 100px;
+	/* max-width: 100px;
+	min-width: 70px; */
+	font-size: 16px;
+	text-decoration: none !important;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.reload_dogs:hover {
+	opacity: 1;
+}
+
+.filt {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 5px 0;
+}
+.posLinks{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	
+}
+select{
+	padding: 3px;
+	background-color: #04537d9e;
+	border: solid 1px #04537d;
+	border-radius: 5px;
+	width: 150px;
+	margin-right: 5px;
+	min-width: 70px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+}

@@ -1,0 +1,52 @@
+.landing_page {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+  min-height: 100vh;
+	background-image: url('../../img/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg');
+	background-size:140%;
+	background-position:left center;
+	position: relative;
+  overflow: hidden;
+}
+.title_landing{
+	position: absolute;
+  top: 30%;
+  left: 25%;
+  margin: -25px 0 0 -25px;
+	font-family: 'Bebas Neue' , sans-serif;
+	color: #ffbb4d;
+	font-size: 6rem;
+}
+.subtitle_landing {
+  font-size: 18px;
+	position: absolute;
+  top: 43%;
+  left: 25%;
+  margin: -25px 0 0 -25px;
+  font-family: 'Bebas Neue', sans-serif;
+	color: rgb(255, 255, 255);
+	text-shadow: black 1px 1px;
+ 
+}
+.button_landing {
+	position: absolute;
+  top: 50%;
+  left: 25%;
+  margin: -25px 0 0 -25px;
+  background-color: #be9155;
+	border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.button_landing:hover {
+  opacity: 1;
+}

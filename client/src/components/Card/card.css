@@ -1,0 +1,25 @@
+.content{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #82acbc;
+	width: 220px;
+	height: auto ;
+	padding: 12px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px #00000040; 
+	opacity: 0.9;
+	text-align: center;
+	margin: 15px;
+	line-height: 15px;
+}  
+
+.content:hover{
+	opacity: 1;
+}
+
+.card_image{
+	width: 190px;
+	border-radius: 10px;
+}

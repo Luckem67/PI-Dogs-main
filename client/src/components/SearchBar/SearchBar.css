@@ -1,0 +1,33 @@
+.searchBar{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 20px 0;
+}
+input {
+	padding: 10px 20px;
+	background-color: #82abbcd1;
+	border: solid 1px #75a7bb;
+	border-radius: 5px;
+	width: 50%;
+	max-width: 500px;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-right: 3px;
+	margin-top: -20px;
+}
+.searchBtn{
+	padding: 10px;
+	color: black;
+	
+	background-color: #04537d9e;
+	border: solid 1px #04537d;
+	border-radius: 5px;
+	width: 5%;
+	max-width: 100px;
+	min-width: 70px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: -20px;
+}
